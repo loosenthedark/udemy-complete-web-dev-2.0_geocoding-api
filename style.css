@@ -1,0 +1,222 @@
+/* Global styles */
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+}
+
+h3 {
+  width: 100%;
+}
+
+h6 {
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.15rem;
+  max-width: 25rem;
+}
+
+.container-fluid {
+  min-height: 100vh;
+  background-color: #ecf0f3;
+  position: relative;
+}
+
+/* Buttons */
+
+.btn {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  min-width: 12.6984rem;
+  min-height: 3rem;
+}
+
+.btn-send,
+.btn-secondary {
+  width: 17rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+  line-height: 0.95rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-top: 1.225rem !important;
+  padding-bottom: 1.225rem !important;
+  background-color: #005960;
+  border: 1px solid #005960;
+}
+
+.btn-send.py-3 {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+  font-size: 0.95rem;
+  line-height: 0.95rem;
+  width: 13rem;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: pointer;
+  max-width: 13rem;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* Form */
+
+.form-group {
+  max-width: 25rem;
+}
+
+.form-control {
+  border-radius: 0.3rem;
+  background-color: #ecf0f3;
+  border: none;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  padding: 0.85rem;
+  display: flex;
+}
+
+.globe-circle {
+  color: #005960;
+  margin-bottom: 5px;
+  border: 0.15rem solid #005960;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  max-width: unset;
+  margin-top: -78.4px;
+  font-size: 4.15rem;
+}
+
+.mb-md-4_5 {
+  margin-bottom: 2.25rem !important;
+}
+
+.app-login-form {
+  min-width: 36rem;
+}
+
+#contact-form {
+  background-color: #ecf0f3;
+  border: none;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 2rem;
+  padding-top: 2rem;
+}
+
+.card-profile-img {
+  width: 7rem;
+  height: 7rem;
+  font-size: 3.2rem;
+}
+
+#form-profile-img {
+  margin-top: unset;
+  border: none;
+  background-color: #ecf0f3;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+  width: 8rem;
+  height: 8rem;
+  font-size: 4.2rem;
+}
+
+#contact-form h6.text-white {
+  color: #292b2c !important;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  /* font-weight: 400; */
+}
+
+/* Modal */
+
+/* Modal vertical centering */
+/* Code block adapted from https://stackoverflow.com/questions/50579924/bootstrap-modal-not-showing-properly-centered */
+
+.modal-dialog-wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width: inherit;
+  max-width: inherit;
+  /* For Bootstrap 4 - to prevent the modal window from stretching full width */
+  height: inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events: all;
+}
+
+.modal-header {
+  position: relative;
+  background-color: #005960;
+  color: #fdfdfd;
+}
+
+.modal .close {
+  position: absolute;
+  top: 0.25rem;
+  right: 1.2rem;
+  cursor: pointer;
+  font-size: 2.25rem;
+  color: #fdfdfd;
+}
+
+.modal-backdrop
+{
+    opacity: .82 !important;
+}
+
+h5 > span {
+  color: #007bff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-left: .3rem;
+}
+
+.alert-warning {
+  position: relative;
+}
+
+.alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem 0.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: inherit;
+}
+
+.alert-dismissible .close:focus {
+    outline: none;
+}
+
+.alert h6 {
+  font-weight: 700;
+}
